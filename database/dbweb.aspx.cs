@@ -40,7 +40,7 @@ namespace database
 
                 SqlCommand cmd = new SqlCommand(b, con);
                 cmd.ExecuteNonQuery();
-                Response.Write("Connected and updated Successfully");
+                Response.Write("Connected and updated Successfullymnbfmd");
             }
 
         }
