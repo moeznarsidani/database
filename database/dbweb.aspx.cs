@@ -40,7 +40,7 @@ namespace database
 
                 SqlCommand cmd = new SqlCommand(b, con);
                 cmd.ExecuteNonQuery();
-                Response.Write("Connected and updated Successfullymnbfmd");
+                Response.Write("Connected and updated Successfully.");
             }
 
         }
@@ -72,11 +72,15 @@ namespace database
             if (sdr.Read())
             {
                TextBox7.Text = sdr.GetValue(0)+"\n"+sdr.GetValue(1) +"\n"+ sdr.GetValue(2) + "\n" + sdr.GetValue(3) + "\n" + sdr.GetValue(4) + "\n" + sdr.GetValue(5).ToString();
-              
+                Response.Write("selected   and get data successfully!!!");
+               
             }
-
-            Response.Write("selected success!!!");
-           
+            else
+            {
+                TextBox7.Text="there is no data";
+            }
+            
+         
         }
 
      
